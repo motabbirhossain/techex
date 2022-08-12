@@ -1,0 +1,104 @@
+.future-wrepper{
+    padding: 106px 0px;
+    @media (max-width:768px) {
+        padding: 50px 0px;
+    }
+    .future-item{
+        @media (max-width:768px) {
+            padding: 25px 0px;
+        }
+        z-index: 1;
+        position: relative;
+        .icon{
+            margin-bottom: 30px;
+        }
+        .content{
+            h4{
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 30px;
+                font-family: $body-font;
+                color: $white;
+                margin-bottom: 15px;
+            }
+            p{
+                max-width: 315px;
+                height: auto;
+                margin: 0 auto;
+                font-weight: 450;
+                font-size: 15px;
+                line-height: 26px;
+                font-family: $body-font;
+                color: $white;
+
+            }
+        }
+        .vector{
+            position: absolute;
+            top: -4%;
+            left: 40%;
+            z-index: -1;
+            @media (max-width:768px) {
+                top: 8%;
+            }
+        }
+    }
+}
+
+.core-futures{
+    
+    padding: 120px 0px;
+    @media (max-width:768px) {
+        padding-bottom: 50px;
+        padding-top: 0px;
+    }
+    .section-title{
+        padding-bottom: 20px;
+        position: relative;
+        padding-top: 30px;
+        max-width: 594px;
+        margin: 0 auto;
+        h2{
+            @include section_h2;
+            @media (max-width:768px) {
+                line-height: 50px;
+            }
+        }
+        @media (max-width:768px) {
+            padding-bottom: 0px;
+            padding-top:0px;
+        }
+    }
+    .section-shap_1,.section-shap_2{
+        position: absolute;
+        bottom: -200%;
+        left: 37%;
+        @media (max-width:768px) {
+           display: none;
+        }
+    }
+    .section-shap_2{
+        bottom: -190%;
+        left: 0%;
+        @media (max-width:768px) {
+           display: none;
+        }
+    }
+    .core-item{
+        margin-top: 30px;
+        border-radius: 5px;
+        max-height: 280px;
+        .icon{
+            padding-top: 80px;
+            img{
+                height: 79px;
+                margin: auto;
+            }
+        }
+        .content{
+            padding-top: 25px;
+           padding-bottom: 80px;
+        }
+    }
+
+}

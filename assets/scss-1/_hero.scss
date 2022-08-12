@@ -1,0 +1,228 @@
+/* ----------------------------------
+   Hero Section - Styles
+ ------------------------------------ */
+
+ .hero-2 {
+    background-color: #EBF1FF;
+    position: relative;
+
+    .hero-slider {
+        padding-bottom: 350px;
+        padding-top: 150px;
+        z-index: 1;
+        position: relative;
+
+        @media (max-width: 1600px) {
+            padding-bottom: 350px;
+        }
+        @media (max-width: 1080px) {
+            padding-top: 50px;
+            padding-bottom: 85px;
+        }
+
+        .hero-contents {
+            position: relative;
+            z-index: 10;
+            h2 {
+                font-family:$body-font;
+                font-weight: 700;
+                font-size: 64px;
+                line-height: 80px;
+                letter-spacing: -0.03em;
+                text-transform: capitalize;
+                margin-bottom: 40px;
+                color: $second-color;
+                @media (max-width: 1600px) {
+                    font-size: 64px;
+                }
+
+                @media (max-width: 767px) {
+                    font-size: 30px;
+                    text-align: center;
+                    margin-bottom: 20px;
+                    line-height: 50px;
+                }
+            }
+
+            h5 {
+                font-family:$body-font;
+                font-weight: 450;
+                font-size: 16px;
+                line-height: 20px;
+                letter-spacing: 0.1em;
+                text-transform: uppercase;
+                color: #211E3B;
+                margin-bottom: 12px;
+                @media (max-width: 767px) {
+                    font-size: 14px;
+                    text-align: center;
+                }
+
+            }
+            .text-btns{
+                @media (max-width: 580px) {
+                    text-align: center;
+                margin-top: 35px;
+                a {
+                    color: #fff;
+    
+                    @media (max-width: 580px) {
+                        margin-top: 20px;
+                        margin-bottom: 30px;
+                    }
+                }
+            }
+        }
+        }
+        .hero-img{
+            display: inline;
+            .laptop_larg{
+                display: inline;
+                position: absolute;
+                top: 0%;
+                right: -23%;
+                z-index: 2;
+                animation: left_to_right 6s 0.5s ease-in-out infinite;
+                @media (max-width: 1600px) {
+                    right: -10%;
+                }
+                @media (max-width: 1366px) {
+                    right: -3%;
+                    z-index: -1;
+                   animation: top_to_bottom 6s 0.5s ease-in-out infinite;
+                }
+                @media (max-width: 1200px) {
+                    z-index: -1;
+                 }
+                @media (max-width: 1080px) {
+                    width: 400px;
+                    height: auto;
+                 }
+                 @media (max-width: 998px) {
+                    width: 400px;
+                    height: auto;
+                    right: -49%;
+                 }
+                 @media (max-width: 768px) {
+                    height: auto;
+                    right: 9%;
+                 }
+                 @media (max-width: 630px) {
+                    img{
+                        max-width: 250px;
+                    }
+                 }
+            }
+            .laptop{
+                position: absolute;
+                top: 80%;
+                left: -20%;
+                z-index: 1;
+                animation: left_to_laptop 6s 0.5s ease-in-out infinite;
+                @media (max-width: 1080px) {
+                    width: 400px;
+                    height: auto;
+                    top:0%;
+                    left: 0%;
+                    position: relative !important;
+                 }
+                @media (max-width: 630px) {
+                    width: auto;
+                    img{
+                        max-width: 250px;
+                    }
+                 }
+            }
+            .tab{
+                position: absolute;
+                top: 116%;
+                right: 12%;
+                z-index: 5;
+                animation: top_to_bottom 4s 0.4s ease-in-out infinite;
+                @media (max-width: 1300px) {
+                    right: 17%;
+                 }
+                @media (max-width: 1080px) {
+                    position: absolute;
+                    width: 150px;
+                    top: 69%;
+                 }
+            }
+            .phone{
+                position: absolute;
+                top: 134%;
+                right: -4%;
+                z-index: 5;
+                animation: top_to_bottom 4s  1s ease-in-out infinite;
+                @media (max-width: 1300px) {
+                    right: 17%;
+                 }
+                @media (max-width: 1080px) {
+                    position: absolute;
+                    width: 100px;
+                    top: 73%;
+                    right: 13%;
+                 }
+            }
+            .pen{
+                position: absolute;
+                top: 40%;
+            }
+            @media (max-width: 1600px) {
+                right: -23%;
+            }
+            @media (max-width: 1080px) {
+               display: none;
+            }
+        }
+    }
+    .play-icon{
+        position: absolute;
+        top: 6%;
+        right: 18%;
+        
+    }
+    .play-icon_2{
+        position: absolute;
+        top: 30%;
+        left:10%;
+    }
+    .game-icon{
+        position: absolute;
+        top: 20%;
+        left: 10%;
+        .sercale{
+            animation: sercale 5s ease-in infinite;
+        }
+        .line{
+            animation: line 3s ease-in infinite;
+        }
+    }
+    .ellipuse_01{
+        position: absolute;
+        bottom: 0;
+        left:0%;
+    }
+    .shap_01{
+        position: absolute;
+        bottom: 17%;
+        left: 5% !important;
+        animation: top_to_bottom 2.5s ease-in-out infinite;
+    }
+    .ellipuse_02{
+        position: absolute;
+        bottom: 0;
+        right: 0 !important;
+    }
+    .shap_02{
+        position: absolute;
+        bottom: 17%;
+        right: 5% !important;
+        animation: left_to_right 3s ease-in-out infinite;
+    }
+    @media (max-width:1618px) {
+        .play-icon,.play-icon_2,.game-icon,.ellipuse_01,.shap_01,.ellipuse_02,.shap_02{
+            display: none !important;
+        }
+    }
+ }

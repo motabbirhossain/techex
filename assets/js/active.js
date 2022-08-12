@@ -6,160 +6,8 @@ Author: RRDevs
 (function($) {
     "use strict";
 
+
     $(document).ready( function() {
-                
-        $(".hero-slider-active").owlCarousel({        
-            items: 1,     
-            dots: false,
-            loop: true,
-            autoplayTimeout: 8000,
-            autoplay:true,
-            nav: true,          
-            navText: ['<i class="fal fa-arrow-left"></i>', '<i class="fal fa-arrow-right"></i>'],
-        });
-
-        $(".testimonial-carousel-active").owlCarousel({        
-            items: 1,     
-            dots: true,
-            loop: true,
-            autoplayTimeout: 8000,
-            autoplay:true,
-        });
-        
-        $(".testimonial-carousel-2").owlCarousel({        
-            items: 2,
-            margin: 30,     
-            dots: true,
-            loop: true,
-            autoplayTimeout: 8000,
-            autoplay:true,
-            responsive : {
-                // breakpoint from 0 up
-                0 : {
-                    items: 1
-                },                
-                // breakpoint from 992 up
-                1191 : {
-                    items: 2
-                }
-            }
-        });
-
-        $(".hero-slider-2").owlCarousel({        
-            items: 1,     
-            dots: true,
-            loop: true,
-            autoplayTimeout: 9000,
-            autoplay:true,
-        });
-
-        $(".brand-carousel-active").owlCarousel({  
-            margin: 70,    
-            dots: false,
-            loop: true,
-            autoplayTimeout: 8000,
-            autoplay:true,  
-            responsive : {
-                // breakpoint from 0 up
-                0 : {
-                    items: 2,
-                },
-                767 : {
-                    items: 2
-                },                
-                // breakpoint from 992 up
-                1191 : {
-                    items: 5
-                }
-            }
-        });
-
-        $(".case-study-items").owlCarousel({  
-            margin: 30,    
-            dots: false,
-            loop: true,
-            autoplayTimeout: 8000,
-            center: true,
-            autoplay:true,
-            nav: true,
-            navText: ['<i class="fal fa-arrow-left"></i>', '<i class="fal fa-arrow-right"></i>'],
-            navContainer: '.case-study-carousel-wrapper .work-process-nav', 
-            responsive : {
-                // breakpoint from 0 up
-                0 : {
-                    items: 1
-                },
-                768 : {
-                    items: 2
-                },                
-                1200 : {
-                    items: 3
-                }
-            }
-        });
-
-        $(".project-case-study").owlCarousel({        
-            margin: 30,      
-            dots: true,
-            loop: true,
-            autoplayTimeout: 8000,
-            autoplay:true,
-            center: true, 
-            responsive : {
-                // breakpoint from 0 up
-                0 : {
-                    items: 1
-                },
-                767 : {
-                    items: 2
-                },                
-                // breakpoint from 992 up
-                1191 : {
-                    items: 3
-                },
-
-            }
-        });
-
-
-        /* =============================================
-            # Magnific popup init
-         ===============================================*/
-        $(".popup-link").magnificPopup({
-            type: 'image',
-            fixedContentPos: false
-        });
-
-        $(".popup-gallery").magnificPopup({
-            type: 'image',
-            fixedContentPos: false,
-            gallery: {
-                enabled: true
-            },
-            // other options
-        });
-
-        $(".popup-video, .popup-vimeo, .popup-gmaps").magnificPopup({
-            type: "iframe",
-            mainClass: "mfp-fade",
-            removalDelay: 160,
-            preloader: false,
-            fixedContentPos: false
-        });
-        
-        /*==========================
-           Scroll To Up Init
-        ============================*/
-        $.scrollUp({
-            scrollName: 'scrollUp', // Element ID
-            topDistance: '1110', // Distance from top before showing element (px)
-            topSpeed: 2000, // Speed back to top (ms)
-            animation: 'slide', // Fade, slide, none
-            animationInSpeed: 300, // Animation in speed (ms)
-            animationOutSpeed: 300, // Animation out speed (ms)
-            scrollText: '<i class="fal fa-angle-up"></i>', // Text for element
-            activeOverlay: false, // Set CSS color to display scrollUp active point, e.g '#00FFFF'
-        });
 
         //# Smooth Scroll
         $('#responsive-menu a').on('click', function(event) {
@@ -195,10 +43,6 @@ Author: RRDevs
                 $grid.isotope({ filter: filterValue });
             });
 
-            var $grid = $('.grid').isotope({
-                itemSelector: '.grid-item',
-                percentPosition: true,
-            });
         });
 
         var catButton = '.portfolio-cat-filter button';
@@ -244,27 +88,6 @@ Author: RRDevs
         });
 
 
-        const counterUp = window.counterUp.default
-
-        const callback = entries => {
-            entries.forEach( entry => {
-                const el = entry.target
-                if ( entry.isIntersecting && ! el.classList.contains( 'is-visible' ) ) {
-                    counterUp( el, {
-                        duration: 2500,
-                        delay: 16,
-                    } )
-                    el.classList.add( 'is-visible' )
-                }
-            } )
-        }
-
-        const IO = new IntersectionObserver( callback, { threshold: 1 } )
-
-        const el = document.querySelectorAll( '.single-funfact-item h3' );
-        el.forEach((el) => {
-            IO.observe(el);
-        });
 
     }); // end document ready function
 
@@ -276,5 +99,42 @@ Author: RRDevs
     }
 
     loader();
+
+    //TIMES 
+        
+    (function () {
+        const second = 1000,
+            minute = second * 60,
+            hour = minute * 60,
+            day = hour * 24;
+    
+        //I'm adding this section so I don't have to keep updating this pen every year :-)
+        //remove this if you don't need it
+        let today = new Date(),
+            dd = String(today.getDate()).padStart(2, "0"),
+            mm = String(today.getMonth() + 1).padStart(2, "0"),
+            yyyy = today.getFullYear(),
+            nextYear = yyyy + 1,
+            dayMonth = "08/20/",
+            birthday = dayMonth + yyyy;
+        
+        today = mm + "/" + dd + "/" + yyyy;
+        //end
+        
+        const countDown = new Date(birthday).getTime(),
+            x = setInterval(function() {    
+    
+            const now = new Date().getTime(),
+                    distance = countDown - now;
+    
+            document.getElementById("day").innerText = Math.floor(distance / (day)),
+                document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
+                document.getElementById("munite").innerText = Math.floor((distance % (hour)) / (minute)),
+                document.getElementById("secend").innerText = Math.floor((distance % (minute)) / second);
+    
+            //seconds
+            }, 0)
+        }());
+
 
 })(jQuery); // End jQuery

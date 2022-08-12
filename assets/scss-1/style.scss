@@ -1,0 +1,60 @@
+/*
+Template: Techex - Information & Technology HTML Template
+Author: RRDevs
+Author URI: https://themeforest.net/user/rrdevs
+Description: Information & Technology HTML Template
+Version: 1.0
+*/
+
+// BASIC
+@import 'basic';
+
+// variables
+@import 'variables';
+
+// TYPOGRAPHY
+
+@import 'fonts';
+
+@import 'typography';
+
+// MIX
+@import 'mix';
+
+// HELPER
+@import 'helper';
+
+// ANIMATION
+@import 'animation';
+
+// Button 
+@import 'btn';
+
+// Colors 
+@import 'colors';
+
+// Preloader 
+@import 'preloader';
+
+/* ----------------------------------
+    Template Section Styles
+ ------------------------------------*/
+
+// Menu - Header Section 
+@import 'header';
+
+// Hero Slide - Section 
+@import 'hero';
+
+// Section Title - Heading 
+@import 'section';
+
+// Features - Section 
+@import 'features';
+
+// Content Block - Section 
+@import 'contentblock';
+
+
+// footer - Section 
+@import 'footer';

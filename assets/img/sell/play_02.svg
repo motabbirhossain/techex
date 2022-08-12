@@ -1,6 +1,7 @@
- <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
 
-<style>
+    
+    <style>
 
       @keyframes rotate {  
         from { 
@@ -20,10 +21,8 @@
         -webkit-animation: rotate 1s ease-in infinite;
         -webkit-transform-origin: center; -ms-transform-origin: center; transform-origin: center; transform-box: fill-box;
     }
-</style>
+    </style>
 
-    <g id="path">
-     <path d="M3.30593 12.0354L11.5843 3.18614L15.1088 14.7801L3.30593 12.0354Z" stroke="#086AD7" stroke-width="3"/>
-    </g>
-        
+    <g id="path"><path d="M3.3069 12.0354L11.5853 3.18614L15.1098 14.7801L3.3069 12.0354Z" stroke="#211E3B" stroke-width="3"/></g>
+    
 </svg>
