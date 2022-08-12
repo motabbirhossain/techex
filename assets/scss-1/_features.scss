@@ -2,6 +2,7 @@
     padding: 106px 0px;
     @media (max-width:768px) {
         padding: 50px 0px;
+        margin-bottom: 50px;
     }
     .future-item{
         @media (max-width:768px) {
@@ -61,7 +62,7 @@
         h2{
             @include section_h2;
             @media (max-width:768px) {
-                line-height: 50px;
+                line-height: 30px;
             }
         }
         @media (max-width:768px) {

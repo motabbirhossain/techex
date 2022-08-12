@@ -17,7 +17,7 @@
         }
         @media (max-width: 1080px) {
             padding-top: 50px;
-            padding-bottom: 85px;
+            padding-bottom: 150px;
         }
 
         .hero-contents {
@@ -40,7 +40,7 @@
                     font-size: 30px;
                     text-align: center;
                     margin-bottom: 20px;
-                    line-height: 50px;
+                    line-height: 40px;
                 }
             }
 
@@ -60,9 +60,9 @@
 
             }
             .text-btns{
-                @media (max-width: 580px) {
+                @media (max-width: 768px) {
                     text-align: center;
-                margin-top: 35px;
+                    margin-top: 35px;
                 a {
                     color: #fff;
     
@@ -172,7 +172,7 @@
                 right: -23%;
             }
             @media (max-width: 1080px) {
-               display: none;
+            //    display: none;
             }
         }
     }
